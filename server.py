@@ -17,15 +17,3 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
             if not message.decode(encoding="utf-8").strip():
                 break
             conn.sendall(message)
-
-
-'''
-
-'b\n\r'
- in reality 
-
-b''
-in reality
-
-
-'''
